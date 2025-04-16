@@ -19,9 +19,9 @@ public abstract class Mole : MonoBehaviour
    }
    public void Hide()
    {
-      float _animDuration = 0.2f;
+      float _animDuration = 0.1f;
 
-      transform.DOLocalMoveY(transform.localPosition.y - 2, _animDuration).SetEase(Ease.InBounce);
+      transform.DOLocalMoveY(transform.localPosition.y - 0.8f, _animDuration).SetEase(Ease.OutBounce);
       Destroy(gameObject, _animDuration + 0.1f);
    }
 
