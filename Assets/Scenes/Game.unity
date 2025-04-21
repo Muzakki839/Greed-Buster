@@ -167,15 +167,24 @@ MonoBehaviour:
   spawnInterval: 1
   maxMoles: 3
   spawnPoints:
-  - {fileID: 1856880805}
-  - {fileID: 457845679}
-  - {fileID: 1381731979}
-  - {fileID: 1065135176}
-  - {fileID: 376681498}
-  - {fileID: 941642268}
-  - {fileID: 1640187739}
-  - {fileID: 390585389}
-  - {fileID: 1679379611}
+  - spawnPointTransform: {fileID: 1856880805}
+    isOccupied: 0
+  - spawnPointTransform: {fileID: 457845679}
+    isOccupied: 0
+  - spawnPointTransform: {fileID: 1381731979}
+    isOccupied: 0
+  - spawnPointTransform: {fileID: 1065135176}
+    isOccupied: 0
+  - spawnPointTransform: {fileID: 376681498}
+    isOccupied: 0
+  - spawnPointTransform: {fileID: 941642268}
+    isOccupied: 0
+  - spawnPointTransform: {fileID: 1640187739}
+    isOccupied: 0
+  - spawnPointTransform: {fileID: 390585389}
+    isOccupied: 0
+  - spawnPointTransform: {fileID: 1679379611}
+    isOccupied: 0
 --- !u!1 &297802273
 GameObject:
   m_ObjectHideFlags: 0
