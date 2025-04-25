@@ -7,7 +7,7 @@ public class MoleSpawner : Singleton<MoleSpawner>
     [SerializeField] private float spawnInterval = 0.1f;
     // [SerializeField] private int maxMoles = 3;
 
-    [SerializeField] private List<SpawnPoints> spawnPoints = new List<SpawnPoints>();
+    [SerializeField] private List<SpawnPoints> spawnPoints = new();
 
     private void Start()
     {
@@ -30,6 +30,8 @@ public class MoleSpawner : Singleton<MoleSpawner>
         // give spawnPointID info to the mole
         // (so it can set slot-occupied-status to false when it hides or hits)
         _mole.GetComponent<Mole>().spawnPointID = _randomSpawnPointID;
+        // add spawned mole to the list
+        SetSpawnPointMole(_randomSpawnPointID, _mole);
         // set slot-occupied-status to True
         SetSpawnPointOccupied(_randomSpawnPointID, true);
     }
@@ -53,6 +55,14 @@ public class MoleSpawner : Singleton<MoleSpawner>
     {
         spawnPoints[id].isOccupied = isOccupied;
     }
+    public void SetSpawnPointMole(int id, GameObject mole)
+    {
+        spawnPoints[id].spawnedMole = mole;
+    }
+    public GameObject GetSpawnedMoleByID(int id)
+    {
+        return spawnPoints[id].spawnedMole;
+    }
 }
 
 [System.Serializable]
@@ -60,4 +70,5 @@ public class SpawnPoints
 {
     public Transform spawnPointTransform;
     public bool isOccupied;
+    public GameObject spawnedMole;
 }

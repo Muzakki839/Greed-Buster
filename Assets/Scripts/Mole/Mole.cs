@@ -14,7 +14,12 @@ public abstract class Mole : MonoBehaviour
    private void Start() { Appear(); }
 
    // --------- Hit ---------
-   public void Hit() { }
+   public void Hit()
+   {
+      Debug.Log($"Hit mole at hole: {spawnPointID}");
+      HitEffect();
+      Destroy(gameObject);
+   }
    public virtual void HitEffect() { }
 
    // --------- Show/Hide ---------
@@ -29,8 +34,12 @@ public abstract class Mole : MonoBehaviour
 
       transform.DOLocalMoveY(transform.localPosition.y - 0.8f, _animDuration).SetEase(Ease.OutBounce);
       Destroy(gameObject, _animDuration + 0.1f);
+   }
 
+   private void OnDestroy()
+   {
       MoleSpawner.Instance.SetSpawnPointOccupied(spawnPointID, false);
+      MoleSpawner.Instance.SetSpawnPointMole(spawnPointID, null);
    }
 
 }

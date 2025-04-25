@@ -163,28 +163,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1e39d989ecf2b4cab2a3f4a3055b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_DelayDuplicateRemoval: 0
   molePrefab: {fileID: 3265150223646632907, guid: 6afa5a91171bf5a448074afc6dc1d8de, type: 3}
   spawnInterval: 1
-  maxMoles: 3
   spawnPoints:
   - spawnPointTransform: {fileID: 1856880805}
     isOccupied: 0
+    spawnedMole: {fileID: 0}
   - spawnPointTransform: {fileID: 457845679}
     isOccupied: 0
+    spawnedMole: {fileID: 0}
   - spawnPointTransform: {fileID: 1381731979}
     isOccupied: 0
+    spawnedMole: {fileID: 0}
   - spawnPointTransform: {fileID: 1065135176}
     isOccupied: 0
+    spawnedMole: {fileID: 0}
   - spawnPointTransform: {fileID: 376681498}
     isOccupied: 0
+    spawnedMole: {fileID: 0}
   - spawnPointTransform: {fileID: 941642268}
     isOccupied: 0
+    spawnedMole: {fileID: 0}
   - spawnPointTransform: {fileID: 1640187739}
     isOccupied: 0
+    spawnedMole: {fileID: 0}
   - spawnPointTransform: {fileID: 390585389}
     isOccupied: 0
+    spawnedMole: {fileID: 0}
   - spawnPointTransform: {fileID: 1679379611}
     isOccupied: 0
+    spawnedMole: {fileID: 0}
 --- !u!1 &297802273
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +225,7 @@ Transform:
   m_Children:
   - {fileID: 208612635}
   - {fileID: 1935261347}
+  - {fileID: 1816584956}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &376681497
@@ -1240,6 +1250,225 @@ Transform:
   - {fileID: 619394802}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1816584955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816584956}
+  - component: {fileID: 1816584959}
+  - component: {fileID: 1816584958}
+  m_Layer: 0
+  m_Name: PunchManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1816584956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816584955}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 297802274}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1816584958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816584955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816584959}
+        m_TargetAssemblyTypeName: PunchSystem, Assembly-CSharp
+        m_MethodName: PunchHoleID
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2cb83b95-67f5-467f-b545-d1b05d93c57f
+    m_ActionName: 'Keyboar/slot1[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816584959}
+        m_TargetAssemblyTypeName: PunchSystem, Assembly-CSharp
+        m_MethodName: PunchHoleID
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c02829a9-13ad-478b-9463-09490c7378f5
+    m_ActionName: 'Keyboar/slot2[/Keyboard/w]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816584959}
+        m_TargetAssemblyTypeName: PunchSystem, Assembly-CSharp
+        m_MethodName: PunchHoleID
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1bcdecf0-2962-4fbd-8419-4dbaee5b0ed1
+    m_ActionName: 'Keyboard/Hole 3[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816584959}
+        m_TargetAssemblyTypeName: PunchSystem, Assembly-CSharp
+        m_MethodName: PunchHoleID
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 93cd4353-b62d-4729-a919-a00617c88798
+    m_ActionName: 'Keyboard/Hole 4[/Keyboard/a]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816584959}
+        m_TargetAssemblyTypeName: PunchSystem, Assembly-CSharp
+        m_MethodName: PunchHoleID
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1643cc8d-2917-498f-9c9e-1ee911af7ec2
+    m_ActionName: 'Keyboard/Hole 5[/Keyboard/s]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816584959}
+        m_TargetAssemblyTypeName: PunchSystem, Assembly-CSharp
+        m_MethodName: PunchHoleID
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ab1523b8-39f1-4845-bf34-7446266d5662
+    m_ActionName: 'Keyboard/Hole 6[/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816584959}
+        m_TargetAssemblyTypeName: PunchSystem, Assembly-CSharp
+        m_MethodName: PunchHoleID
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d4b799f6-9a72-4fef-ac7a-da6f84b6b062
+    m_ActionName: 'Keyboard/Hole 7[/Keyboard/z]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816584959}
+        m_TargetAssemblyTypeName: PunchSystem, Assembly-CSharp
+        m_MethodName: PunchHoleID
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 30a52fe2-8c27-4660-a332-6aa478f398d8
+    m_ActionName: 'Keyboard/Hole 8[/Keyboard/x]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816584959}
+        m_TargetAssemblyTypeName: PunchSystem, Assembly-CSharp
+        m_MethodName: PunchHoleID
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 87d94dc5-218d-445e-a651-59e8b51588a2
+    m_ActionName: 'Keyboard/Hole 9[/Keyboard/c]'
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultActionMap: Keyboard
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 519420031}
+--- !u!114 &1816584959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816584955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa395e9d32bdb8049a1e02a0a6fc01d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1856880804
 GameObject:
   m_ObjectHideFlags: 0
