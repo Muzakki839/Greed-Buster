@@ -42,7 +42,7 @@ public class MoleSpawner : Singleton<MoleSpawner>
         return Random.Range(0, spawnPoints.Count - 1);
     }
 
-    private Vector3 GetSpawnPositionByID(int id)
+    public Vector3 GetSpawnPositionByID(int id)
     {
         return spawnPoints[id].spawnPointTransform.position;
     }

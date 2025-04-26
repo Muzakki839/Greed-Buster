@@ -165,7 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DelayDuplicateRemoval: 0
   molePrefab: {fileID: 3265150223646632907, guid: 6afa5a91171bf5a448074afc6dc1d8de, type: 3}
-  spawnInterval: 1
+  spawnInterval: 0.5
   spawnPoints:
   - spawnPointTransform: {fileID: 1856880805}
     isOccupied: 0
@@ -1469,6 +1469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa395e9d32bdb8049a1e02a0a6fc01d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hammerPrefab: {fileID: 1972263461243238553, guid: 5afa078da99097647976573dab793439, type: 3}
 --- !u!1 &1856880804
 GameObject:
   m_ObjectHideFlags: 0
