@@ -40,6 +40,9 @@ public abstract class Mole : MonoBehaviour
    {
       MoleSpawner.Instance.SetSpawnPointOccupied(spawnPointID, false);
       MoleSpawner.Instance.SetSpawnPointMole(spawnPointID, null);
+
+      // send inactive slot to Ardity
+      SerialMessageHandler.Instance.serialController.SendSerialMessage("l" + spawnPointID + "_off\n");
    }
 
 }
