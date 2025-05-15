@@ -28,7 +28,7 @@ public class MoleSpawner : Singleton<MoleSpawner>
         GameObject _mole = Instantiate(molePrefab, _spawnPoint, Quaternion.identity);
 
         // send active slot to Ardity
-        SerialMessageHandler.Instance.serialController.SendSerialMessage("l" + _randomSpawnPointID + "_on\n");
+        SerialMessageHandler.Instance.SendLedMessage(_randomSpawnPointID, true);
 
         // give spawnPointID info to the mole
         // (so it can set slot-occupied-status to false when it hides or hits)
