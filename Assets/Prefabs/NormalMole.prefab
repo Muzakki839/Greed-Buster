@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPointID: 0
   point: 10
-  waitDuration: 1
+  waitDuration: 1.5
   allowHit: 1
 --- !u!1 &4348706280436133382
 GameObject:

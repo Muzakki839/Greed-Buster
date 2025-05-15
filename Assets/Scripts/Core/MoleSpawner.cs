@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+[RequireComponent(typeof(MolePoolConfig))]
 public class MoleSpawner : Singleton<MoleSpawner>
 {
     [SerializeField] private GameObject molePrefab;
@@ -23,15 +24,15 @@ public class MoleSpawner : Singleton<MoleSpawner>
         // randomize unOccupied-spawn-slot
         var availableSlots = spawnPoints.Where(sp => !sp.isOccupied).ToList(); // Find all available spawn slots
         if (availableSlots.Count == 0) return; // If no available slots, return from method
+        var selectedSlot = availableSlots[Random.Range(0, availableSlots.Count)];
 
         // spawn to the slot location
-        var selectedSlot = availableSlots[Random.Range(0, availableSlots.Count)];
         Vector3 _spawnPoint = selectedSlot.spawnPointTransform.position - new Vector3(0, 1);
         GameObject _mole = Instantiate(molePrefab, _spawnPoint, Quaternion.identity);
 
         // send active slot to Ardity
         int _randomSpawnPointID = spawnPoints.IndexOf(selectedSlot); // Get the ID of the selected spawn point
-        SerialMessageHandler.Instance.SendLedMessage(_randomSpawnPointID, true);
+        SerialMessageHandler.Instance?.SendLedMessage(_randomSpawnPointID, true);
 
         // give spawnPointID info to the mole
         // (so it can set slot-occupied-status to false when it hides or hits)

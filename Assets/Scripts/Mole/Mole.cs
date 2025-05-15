@@ -1,3 +1,4 @@
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ public abstract class Mole : MonoBehaviour
    // Spawn Point Settings
    [HideInInspector] public int spawnPointID;
 
-   private void Start() { Appear(); }
+   private void Start() => Appear();
 
    // --------- Hit ---------
    public void Hit()
@@ -29,6 +30,7 @@ public abstract class Mole : MonoBehaviour
       transform.DOLocalMoveY(transform.localPosition.y + 1, 0.2f).SetEase(Ease.InBounce);
       DOVirtual.DelayedCall(WaitDuration, Hide);
    }
+
    public void Hide()
    {
       float _animDuration = 0.1f;
@@ -43,8 +45,6 @@ public abstract class Mole : MonoBehaviour
       MoleSpawner.Instance.SetSpawnPointMole(spawnPointID, null);
 
       // send inactive slot to Ardity
-      SerialMessageHandler.Instance.SendLedMessage(spawnPointID, false);
-
+      SerialMessageHandler.Instance?.SendLedMessage(spawnPointID, false);
    }
-
 }

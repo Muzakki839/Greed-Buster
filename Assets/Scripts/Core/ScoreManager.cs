@@ -51,10 +51,9 @@ public class ScoreManager : Singleton<ScoreManager>
             float normalizedTime = t / duration;
             score = Mathf.RoundToInt(Mathf.Lerp(startScore, endScore, normalizedTime));
             UpdateUI();
-            yield return null;
+            yield return score = endScore;
         }
 
-        score = endScore;
         UpdateUI();
     }
 
