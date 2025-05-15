@@ -18,6 +18,7 @@ public abstract class Mole : MonoBehaviour
    {
       Debug.Log($"Hit mole at hole: {spawnPointID}");
       HitEffect();
+      ScoreManager.Instance.StartCoroutine(ScoreManager.Instance.TransferScore(Point));
       Destroy(gameObject);
    }
    public virtual void HitEffect() { }
