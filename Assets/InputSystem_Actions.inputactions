@@ -101,11 +101,33 @@
                 },
                 {
                     "name": "",
+                    "id": "e9aa967c-7764-4630-8d61-3b959112e3d8",
+                    "path": "<Keyboard>/numpad7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hole 1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "39e6e1b8-13b3-41dc-b8c9-24d615f45145",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Hole 2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e0f1d140-139a-425e-af6d-304a588e2d6d",
+                    "path": "<Keyboard>/numpad8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Hole 2",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -123,11 +145,33 @@
                 },
                 {
                     "name": "",
+                    "id": "83c59361-c353-4283-9171-e492da369729",
+                    "path": "<Keyboard>/numpad9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hole 3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "d7730f48-a86e-4a6e-846c-2b93ce81f53e",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Hole 4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "138646be-a4f7-4d3d-a210-ae0377414053",
+                    "path": "<Keyboard>/numpad4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Hole 4",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -145,11 +189,33 @@
                 },
                 {
                     "name": "",
+                    "id": "af933b7e-2b23-4989-9bc8-117e0f752aaf",
+                    "path": "<Keyboard>/numpad5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hole 5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "79b6261c-a7c5-41a3-b4ac-d996bcafb0d5",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Hole 6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f82d3b98-f4fd-4871-84b1-c4046cc2c554",
+                    "path": "<Keyboard>/numpad6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Hole 6",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -167,6 +233,17 @@
                 },
                 {
                     "name": "",
+                    "id": "cc5cb03c-d68b-41a1-ab9b-f0533280155e",
+                    "path": "<Keyboard>/numpad1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hole 7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e78f7450-f208-4104-8019-b0a5120ce23e",
                     "path": "<Keyboard>/x",
                     "interactions": "",
@@ -178,11 +255,33 @@
                 },
                 {
                     "name": "",
+                    "id": "09c2dbd3-8600-4018-bea1-0bffc686c35e",
+                    "path": "<Keyboard>/numpad2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hole 8",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "9c53f227-454d-4bd9-9f4a-723e73ed02ff",
                     "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Hole 9",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e469a7be-cc2b-44f9-8882-35a64a39a74c",
+                    "path": "<Keyboard>/numpad3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Hole 9",
                     "isComposite": false,
                     "isPartOfComposite": false
