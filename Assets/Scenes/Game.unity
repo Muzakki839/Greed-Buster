@@ -277,6 +277,8 @@ MonoBehaviour:
   molePools:
   - molePrefab: {fileID: 3265150223646632907, guid: 6afa5a91171bf5a448074afc6dc1d8de, type: 3}
     odd: 1
+  - molePrefab: {fileID: 3265150223646632907, guid: 841729991b9935d4285d75c045cf6015, type: 3}
+    odd: 0.2
 --- !u!1 &297802273
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,8 +7,14 @@ public class MoleSpawner : Singleton<MoleSpawner>
 {
     [SerializeField] private GameObject molePrefab;
     [SerializeField] private float spawnInterval = 0.1f;
-
     [SerializeField] private List<SpawnPoints> spawnPoints = new();
+
+    private MolePoolConfig molePoolConfig;
+
+    private void Start()
+    {
+        molePoolConfig = GetComponent<MolePoolConfig>();
+    }
 
     private void Update()
     {
@@ -28,7 +34,7 @@ public class MoleSpawner : Singleton<MoleSpawner>
 
         // spawn to the slot location
         Vector3 _spawnPoint = selectedSlot.spawnPointTransform.position - new Vector3(0, 1);
-        GameObject _mole = Instantiate(molePrefab, _spawnPoint, Quaternion.identity);
+        GameObject _mole = Instantiate(molePoolConfig.GetRandomMolePrefab(), _spawnPoint, Quaternion.identity);
 
         // send active slot to Ardity
         int _randomSpawnPointID = spawnPoints.IndexOf(selectedSlot); // Get the ID of the selected spawn point
