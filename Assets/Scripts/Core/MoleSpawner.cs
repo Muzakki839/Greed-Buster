@@ -22,8 +22,7 @@ public class MoleSpawner : Singleton<MoleSpawner>
     {
         // randomize unOccupied-spawn-slot
         var availableSlots = spawnPoints.Where(sp => !sp.isOccupied).ToList(); // Find all available spawn slots
-
-        if (availableSlots.Count == 0) return; // Jika tidak ada slot kosong, keluar dari fungsi
+        if (availableSlots.Count == 0) return; // If no available slots, return from method
 
         // spawn to the slot location
         var selectedSlot = availableSlots[Random.Range(0, availableSlots.Count)];
