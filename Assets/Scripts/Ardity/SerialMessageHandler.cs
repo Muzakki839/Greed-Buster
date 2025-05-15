@@ -5,9 +5,12 @@ public class SerialMessageHandler : Singleton<SerialMessageHandler>
 {
     public SerialController serialController;
 
+    private PunchSystem punchSystem;
+
     void Start()
     {
         serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
+        punchSystem = FindFirstObjectByType<PunchSystem>();
     }
 
     //---------------------------------------------------------------------
@@ -27,6 +30,24 @@ public class SerialMessageHandler : Singleton<SerialMessageHandler>
             Debug.Log("Connection attempt failed or disconnection detected");
         else
             Debug.Log("Message arrived: " + message);
+        CheckButton(message);
+    }
+
+    private void CheckButton(string message)
+    {
+        if (message.StartsWith("btn_"))
+        {
+            string[] parts = message.Split('_');
+            if (parts.Length == 2 && int.TryParse(parts[1], out int id))
+            {
+                // Call the punch system to punch the corresponding hole
+                punchSystem.PunchHoleID(id - 1);
+            }
+            else
+            {
+                Debug.LogWarning("Invalid button message format: " + message);
+            }
+        }
     }
 
     //---------------------------------------------------------------------
@@ -35,8 +56,8 @@ public class SerialMessageHandler : Singleton<SerialMessageHandler>
     public void SendLedMessage(int id, bool isOn)
     {
         if (isOn)
-            serialController.SendSerialMessage("l" + id + "_on\n");
+            serialController.SendSerialMessage("led_" + id + 1 + " ON\n");
         else
-            serialController.SendSerialMessage("l" + id + "_off\n");
+            serialController.SendSerialMessage("led_" + id + 1 + " OFF\n");
     }
 }
