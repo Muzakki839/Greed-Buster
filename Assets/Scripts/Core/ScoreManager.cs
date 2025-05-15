@@ -5,15 +5,32 @@ using UnityEngine;
 public class ScoreManager : Singleton<ScoreManager>
 {
     [SerializeField] private int score = 0;
-    [SerializeField] private int targetScore = 10;
+    [SerializeField] private int targetScore = 1000;
 
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI scoreText;
 
+    private void Start()
+    {
+        UpdateUI();
+    }
+
     public void UpdateUI()
     {
-        string textFormat = $"<style=Title>{score} JT</style>/ {targetScore} M";
+        string textFormat = $"<style=Title>Rp {FormatNumber(score)} </style> / {FormatNumber(targetScore)}";
         scoreText.text = textFormat;
+    }
+
+    private string FormatNumber(int num)
+    {
+        if (num >= 1_000_000) // Triliun
+            return $"{num / 1_000_000.00:F2} T";
+        if (num >= 1_000) // Miliar
+            return $"{num / 1_000.0:F1} M";
+        if (num >= 1) // Juta
+            return $"{num / 1} Jt";
+
+        return num.ToString();
     }
 
     public int GetScore() { return score; }

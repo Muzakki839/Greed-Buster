@@ -88,9 +88,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb690e7c96817f40abc4b1ee4b94bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 10
+  timeLimit: 30
   slider: {fileID: 3673646972788449070}
-  playOnStart: 0
+  playOnStart: 1
 --- !u!114 &3673646972788449070
 MonoBehaviour:
   m_ObjectHideFlags: 0

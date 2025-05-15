@@ -232,7 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DelayDuplicateRemoval: 0
   molePrefab: {fileID: 3265150223646632907, guid: 6afa5a91171bf5a448074afc6dc1d8de, type: 3}
-  spawnInterval: 1
+  spawnInterval: 0.3
   spawnPoints:
   - spawnPointTransform: {fileID: 1856880805}
     isOccupied: 0
@@ -1977,7 +1977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DelayDuplicateRemoval: 0
   score: 0
-  targetScore: 10
+  targetScore: 500
   scoreText: {fileID: 48644432}
 --- !u!114 &2078007991 stripped
 MonoBehaviour:
@@ -2203,10 +2203,6 @@ PrefabInstance:
     - target: {fileID: 3518696938029129203, guid: 94ce477442ad0cf4b93ddb6ba53ebadd, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921155171325248407, guid: 94ce477442ad0cf4b93ddb6ba53ebadd, type: 3}
-      propertyPath: playOnStart
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
