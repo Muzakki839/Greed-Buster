@@ -6,7 +6,6 @@ using UnityEngine;
 /// </summary>
 public class MolePoolConfig : MonoBehaviour
 {
-    public int pointMultiplier = 1;
     public float waitDurationMultiplier = 1;
     public List<MolePool> molePools = new();
 
@@ -34,11 +33,6 @@ public class MolePoolConfig : MonoBehaviour
     }
 
     // --------- Modifier ---------
-    public void MultiplyMolePoint(Mole mole)
-    {
-        mole.Point *= pointMultiplier;
-    }
-
     public void MultiplyMoleWaitDuration(Mole mole)
     {
         mole.WaitDuration *= waitDurationMultiplier;

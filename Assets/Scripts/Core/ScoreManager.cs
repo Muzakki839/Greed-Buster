@@ -10,6 +10,9 @@ public class ScoreManager : Singleton<ScoreManager>
     [SerializeField] private int score = 0;
     [SerializeField] private int targetScore = 1000;
 
+    [Header("Modify Score")]
+    public int pointMultiplier = 1;
+
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI scoreText;
 
@@ -24,9 +27,9 @@ public class ScoreManager : Singleton<ScoreManager>
     private string FormatNumber(int num)
     {
         if (num >= 1_000_000) // Triliun
-            return $"{num / 1_000_000.00:F3} T";
+            return $"{num / 1_000_000.0:F1} T";
         if (num >= 1_000) // Miliar
-            return $"{num / 1_000.0:F2} M";
+            return $"{num / 1_000.0:F1} M";
         if (num >= 1) // Juta
             return $"{num / 1} Jt";
 
@@ -56,14 +59,19 @@ public class ScoreManager : Singleton<ScoreManager>
     /// </summary>
     public int MultiplyPoint(int point)
     {
-        return point * MoleSpawner.Instance.molePoolConfig.pointMultiplier;
+        return point * pointMultiplier;
     }
 
+    // --------- Target Score ---------
     public void SetTargetScore(int target)
     {
         targetScore = target;
         UpdateUI();
     }
+
+    public int GetTargetScore() { return targetScore; }
+
+    public bool IsTargetScoreReached() { return score >= targetScore; }
 
     public void ResetScore()
     {

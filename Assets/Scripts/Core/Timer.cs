@@ -1,20 +1,21 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private float timeLimit = 10f;
+    [SerializeField] private float timeLimit = 30f;
     [SerializeField] private Slider slider;
     [SerializeField] private bool playOnStart = false;
 
-    private float timeRemaining;
+    public float timeRemaining { get; private set; }
+    
     private bool isTimerRunning = false;
 
     private void Start()
     {
-        timeRemaining = timeLimit;
         slider.maxValue = timeLimit;
-        slider.value = timeRemaining;
+        ResetTimer();
 
         if (playOnStart)
         {
@@ -31,11 +32,18 @@ public class Timer : MonoBehaviour
 
             if (timeRemaining <= 0)
             {
-                StopTimer();
+                PauseTimer();
                 timeRemaining = 0;
                 Debug.Log("Time's up!");
             }
         }
+    }
+
+    public void SetTimeLimit(float newTimeLimit)
+    {
+        timeLimit = newTimeLimit;
+        slider.maxValue = timeLimit;
+        ResetTimer();
     }
 
     public void StartTimer()
@@ -47,5 +55,22 @@ public class Timer : MonoBehaviour
     public void StopTimer()
     {
         isTimerRunning = false;
+        ResetTimer();
+    }
+
+    public void PauseTimer()
+    {
+        isTimerRunning = false;
+    }
+
+    public void ResumeTimer()
+    {
+        isTimerRunning = true;
+    }
+
+    public void ResetTimer()
+    {
+        timeRemaining = timeLimit;
+        slider.value = timeRemaining;
     }
 }

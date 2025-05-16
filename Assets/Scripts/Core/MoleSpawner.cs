@@ -9,11 +9,12 @@ using UnityEngine;
 public class MoleSpawner : Singleton<MoleSpawner>
 {
     // [SerializeField] private GameObject molePrefab;
-    [SerializeField] private float spawnInterval = 0.1f;
+    public float spawnInterval = 0.1f;
     [SerializeField] private int numMolesSpawnning = 1;
     [SerializeField] private List<SpawnPoints> spawnPoints = new();
 
     [HideInInspector] public MolePoolConfig molePoolConfig;
+    private bool isSpawning = false;
 
     private void Start()
     {
@@ -23,7 +24,7 @@ public class MoleSpawner : Singleton<MoleSpawner>
     private void Update()
     {
         // invoke spawnMole every spawnInterval
-        if (Time.time % spawnInterval < Time.deltaTime && !IsAllSpawnPointsOccupied())
+        if (Time.time % spawnInterval < Time.deltaTime && !IsAllSpawnPointsOccupied() && isSpawning)
         {
             SpawnMole(molePoolConfig.GetRandomMolePrefab());
         }
@@ -55,6 +56,24 @@ public class MoleSpawner : Singleton<MoleSpawner>
         SetSpawnPointMole(_randomSpawnPointID, _mole);
         // set slot-occupied-status to True
         SetSpawnPointOccupied(_randomSpawnPointID, true);
+    }
+
+    public void StartSpawn()
+    {
+        isSpawning = true;
+    }
+
+    public void StopSpawn()
+    {
+        isSpawning = false;
+        // all mole in spawnPoint hide
+        foreach (var sp in spawnPoints)
+        {
+            if (sp.spawnedMole != null)
+            {
+                sp.spawnedMole.GetComponent<Mole>().Hide();
+            }
+        }
     }
 
     // ---------- Spawn Point Controller ----------
