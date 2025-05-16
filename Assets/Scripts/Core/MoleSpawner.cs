@@ -2,14 +2,18 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Script that responsible to set hole spawn and spawnning mole
+/// </summary>
 [RequireComponent(typeof(MolePoolConfig))]
 public class MoleSpawner : Singleton<MoleSpawner>
 {
-    [SerializeField] private GameObject molePrefab;
+    // [SerializeField] private GameObject molePrefab;
     [SerializeField] private float spawnInterval = 0.1f;
+    [SerializeField] private int numMolesSpawnning = 1;
     [SerializeField] private List<SpawnPoints> spawnPoints = new();
 
-    private MolePoolConfig molePoolConfig;
+    [HideInInspector] public MolePoolConfig molePoolConfig;
 
     private void Start()
     {
@@ -21,11 +25,11 @@ public class MoleSpawner : Singleton<MoleSpawner>
         // invoke spawnMole every spawnInterval
         if (Time.time % spawnInterval < Time.deltaTime && !IsAllSpawnPointsOccupied())
         {
-            SpawnMole();
+            SpawnMole(molePoolConfig.GetRandomMolePrefab());
         }
     }
 
-    private void SpawnMole()
+    public void SpawnMole(GameObject mole)
     {
         // randomize unOccupied-spawn-slot
         var availableSlots = spawnPoints.Where(sp => !sp.isOccupied).ToList(); // Find all available spawn slots
@@ -34,11 +38,14 @@ public class MoleSpawner : Singleton<MoleSpawner>
 
         // spawn to the slot location
         Vector3 _spawnPoint = selectedSlot.spawnPointTransform.position - new Vector3(0, 1);
-        GameObject _mole = Instantiate(molePoolConfig.GetRandomMolePrefab(), _spawnPoint, Quaternion.identity);
+        GameObject _mole = Instantiate(mole, _spawnPoint, Quaternion.identity);
 
         // send active slot to Ardity
         int _randomSpawnPointID = spawnPoints.IndexOf(selectedSlot); // Get the ID of the selected spawn point
         SerialMessageHandler.Instance?.SendLedMessage(_randomSpawnPointID, true);
+
+        // modify spawned mole
+        molePoolConfig.MultiplyMoleWaitDuration(_mole.GetComponent<Mole>());
 
         // give spawnPointID info to the mole
         // (so it can set slot-occupied-status to false when it hides or hits)

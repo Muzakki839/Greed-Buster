@@ -2,11 +2,17 @@ using UnityEngine;
 
 public class NormalMole : Mole
 {
-   [SerializeField] private int point = 100;
-   [SerializeField] private float waitDuration = 0.2f;
-   [SerializeField] private bool allowHit = true;
+   [SerializeField] private int point = 10;
+   [SerializeField] private float waitDuration = 1.5f;
 
-   public override int Point => point;
-   public override float WaitDuration => waitDuration;
-   public override bool AllowHit => allowHit;
+   public override int Point
+   {
+      get => point;
+      set => point = value;
+   }
+   public override float WaitDuration
+   {
+      get => waitDuration;
+      set => waitDuration = value;
+   }
 }

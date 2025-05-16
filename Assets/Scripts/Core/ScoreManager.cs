@@ -2,6 +2,9 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Calculate score and update UI
+/// </summary>
 public class ScoreManager : Singleton<ScoreManager>
 {
     [SerializeField] private int score = 0;
@@ -10,10 +13,7 @@ public class ScoreManager : Singleton<ScoreManager>
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI scoreText;
 
-    private void Start()
-    {
-        UpdateUI();
-    }
+    private void Start() => ResetScore();
 
     public void UpdateUI()
     {
@@ -24,9 +24,9 @@ public class ScoreManager : Singleton<ScoreManager>
     private string FormatNumber(int num)
     {
         if (num >= 1_000_000) // Triliun
-            return $"{num / 1_000_000.00:F2} T";
+            return $"{num / 1_000_000.00:F3} T";
         if (num >= 1_000) // Miliar
-            return $"{num / 1_000.0:F1} M";
+            return $"{num / 1_000.0:F2} M";
         if (num >= 1) // Juta
             return $"{num / 1} Jt";
 
@@ -35,14 +35,10 @@ public class ScoreManager : Singleton<ScoreManager>
 
     public int GetScore() { return score; }
 
-    public void AddScore(int point)
-    {
-        score += point;
-        UpdateUI();
-    }
-
     public IEnumerator TransferScore(int point, float duration = 0.2f)
     {
+        point = MultiplyPoint(point);
+
         int startScore = score;
         int endScore = score + point;
 
@@ -53,7 +49,19 @@ public class ScoreManager : Singleton<ScoreManager>
             UpdateUI();
             yield return score = endScore;
         }
+    }
 
+    /// <summary>
+    /// Multiply all point by pointMultiplier from MolePoolConfig. Default = 1
+    /// </summary>
+    public int MultiplyPoint(int point)
+    {
+        return point * MoleSpawner.Instance.molePoolConfig.pointMultiplier;
+    }
+
+    public void SetTargetScore(int target)
+    {
+        targetScore = target;
         UpdateUI();
     }
 
