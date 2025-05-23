@@ -39,7 +39,7 @@ public class MoleSpawner : Singleton<MoleSpawner>
 
         // spawn to the slot location
         Vector3 _spawnPoint = selectedSlot.spawnPointTransform.position - new Vector3(0, 1);
-        GameObject _mole = Instantiate(mole, _spawnPoint, Quaternion.identity);
+        GameObject _mole = Instantiate(mole, _spawnPoint, Quaternion.identity, selectedSlot.spawnPointTransform);
 
         // send active slot to Ardity
         int _randomSpawnPointID = spawnPoints.IndexOf(selectedSlot); // Get the ID of the selected spawn point

@@ -183,6 +183,22 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -9024647113263330491, guid: e52ad9039f85dee4e9b43e3399610580, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
+  - m_Name: holes
+    m_Hash: 477012452
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Asset game_HOLE_0
+      m_Hash: 976480029
+      m_Sprite: {fileID: -3450602128023895001, guid: ee553d0e53f2ec9429155289dafb90e5, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3450602128023895001, guid: ee553d0e53f2ec9429155289dafb90e5, type: 3}
+    - m_Name: Asset game_HOLE_brankas_0
+      m_Hash: 299475422
+      m_Sprite: {fileID: -8495764851379178831, guid: 19fa5b3c6485cab4f98f9a00d2def7ef, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8495764851379178831, guid: 19fa5b3c6485cab4f98f9a00d2def7ef, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638836047436509572
+  m_ModificationHash: 638836147047694708
   m_Version: 1
