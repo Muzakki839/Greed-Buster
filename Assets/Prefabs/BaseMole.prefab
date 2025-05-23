@@ -371,6 +371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7499095224737622428}
   - component: {fileID: 7916303943691195600}
+  - component: {fileID: 756217997738489486}
   m_Layer: 0
   m_Name: BaseMole
   m_TagString: Untagged
@@ -409,6 +410,18 @@ MonoBehaviour:
   spawnPointID: 0
   point: 10
   waitDuration: 1.5
+--- !u!210 &756217997738489486
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3265150223646632907}
+  m_Enabled: 1
+  m_SortingLayerID: 1422445341
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_SortAtRoot: 1
 --- !u!1 &4348706280436133382
 GameObject:
   m_ObjectHideFlags: 0
