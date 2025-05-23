@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: head
+    m_Hash: 670299804
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: asset tikus_TIKUS-07_1
+      m_Hash: 500633689
+      m_Sprite: {fileID: 1571413437853190807, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1571413437853190807, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+    - m_Name: asset tikus_TIKUS-09_1
+      m_Hash: 390675795
+      m_Sprite: {fileID: 2320351900104317206, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2320351900104317206, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+    - m_Name: asset tikus_TIKUS-08_2
+      m_Hash: 260179678
+      m_Sprite: {fileID: -5419291637048204803, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5419291637048204803, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: body
+    m_Hash: 463997874
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: asset tikus_TIKUS-07_4
+      m_Hash: 767419606
+      m_Sprite: {fileID: -4402154445240476777, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4402154445240476777, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+    - m_Name: asset tikus_TIKUS-09_4
+      m_Hash: 656656860
+      m_Sprite: {fileID: -3662591772976962183, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3662591772976962183, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+    - m_Name: asset tikus_TIKUS-08_5
+      m_Hash: 300323709
+      m_Sprite: {fileID: -5689852063969372446, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5689852063969372446, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: ear_L
+    m_Hash: 22441816
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: asset tikus_TIKUS-07_0
+      m_Hash: 718282959
+      m_Sprite: {fileID: 2726396082578014737, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2726396082578014737, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+    - m_Name: asset tikus_TIKUS-09_0
+      m_Hash: 541986245
+      m_Sprite: {fileID: -6019864836630986989, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6019864836630986989, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+    - m_Name: asset tikus_TIKUS-08_1
+      m_Hash: 378230628
+      m_Sprite: {fileID: 8085061736710362146, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8085061736710362146, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: ear_R
+    m_Hash: 995709499
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: asset tikus_TIKUS-07_2
+      m_Hash: 81674723
+      m_Sprite: {fileID: 2785975992943606514, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2785975992943606514, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+    - m_Name: asset tikus_TIKUS-09_2
+      m_Hash: 239103209
+      m_Sprite: {fileID: -533236390365433850, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -533236390365433850, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+    - m_Name: asset tikus_TIKUS-08_3
+      m_Hash: 948254280
+      m_Sprite: {fileID: 743776057250816815, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 743776057250816815, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: hand_L
+    m_Hash: 660200837
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: asset tikus_TIKUS-07_3
+      m_Hash: 869888373
+      m_Sprite: {fileID: 3066161574494197448, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3066161574494197448, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+    - m_Name: asset tikus_TIKUS-09_3
+      m_Hash: 960978047
+      m_Sprite: {fileID: 8506259227035619909, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8506259227035619909, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+    - m_Name: asset tikus_TIKUS-08_4
+      m_Hash: 652321771
+      m_Sprite: {fileID: 4366788358697075707, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4366788358697075707, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: hand_R
+    m_Hash: 492232934
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: asset tikus_TIKUS-07_5
+      m_Hash: 448451648
+      m_Sprite: {fileID: -4393871545918582296, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4393871545918582296, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+    - m_Name: asset tikus_TIKUS-09_5
+      m_Hash: 270858570
+      m_Sprite: {fileID: -5248456770162489995, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5248456770162489995, guid: 5c7eaf8c24639104c8afcc883f7c5de4, type: 3}
+    - m_Name: asset tikus_TIKUS-08_6
+      m_Hash: 149930695
+      m_Sprite: {fileID: 4231958078928975281, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4231958078928975281, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: tail
+    m_Hash: 1010283613
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: asset tikus_TIKUS-07_6
+      m_Hash: 62096890
+      m_Sprite: {fileID: 1495566957010929572, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1495566957010929572, guid: 32b96f0fe94087c46937a2a2a1b6a507, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: hat
+    m_Hash: 302754889
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: asset tikus_TIKUS-08_0
+      m_Hash: 562849778
+      m_Sprite: {fileID: 8472671614067580575, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8472671614067580575, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: money
+    m_Hash: 937366500
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Asset game_UANG_0
+      m_Hash: 331764956
+      m_Sprite: {fileID: -3736311027406934826, guid: aab0d51b60f6fd44594c022304ca88f2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3736311027406934826, guid: aab0d51b60f6fd44594c022304ca88f2, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: hammer
+    m_Hash: 519408182
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Asset game_PALU_0
+      m_Hash: 916486906
+      m_Sprite: {fileID: -9024647113263330491, guid: e52ad9039f85dee4e9b43e3399610580, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -9024647113263330491, guid: e52ad9039f85dee4e9b43e3399610580, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638836047436509572
+  m_Version: 1

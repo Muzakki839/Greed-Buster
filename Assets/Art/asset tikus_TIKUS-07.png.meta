@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: 32b96f0fe94087c46937a2a2a1b6a507
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2726396082578014737
+    second: asset tikus_TIKUS-07_0
+  - first:
+      213: 1571413437853190807
+    second: asset tikus_TIKUS-07_1
+  - first:
+      213: 2785975992943606514
+    second: asset tikus_TIKUS-07_2
+  - first:
+      213: 3066161574494197448
+    second: asset tikus_TIKUS-07_3
+  - first:
+      213: -4402154445240476777
+    second: asset tikus_TIKUS-07_4
+  - first:
+      213: -4393871545918582296
+    second: asset tikus_TIKUS-07_5
+  - first:
+      213: 1495566957010929572
+    second: asset tikus_TIKUS-07_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: asset tikus_TIKUS-07_0
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1207
+        width: 330
+        height: 407
+      alignment: 9
+      pivot: {x: 0.8534108, y: 0.10132256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1124413caca16d520800000000000000
+      internalID: 2726396082578014737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset tikus_TIKUS-07_1
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 1065
+        width: 545
+        height: 467
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ac38e2238cec510800000000000000
+      internalID: 1571413437853190807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset tikus_TIKUS-07_2
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 1207
+        width: 330
+        height: 407
+      alignment: 9
+      pivot: {x: 0.1850031, y: 0.08886389}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa7b24a766c9a620800000000000000
+      internalID: 2785975992943606514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset tikus_TIKUS-07_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 708
+        width: 171
+        height: 254
+      alignment: 9
+      pivot: {x: 0.25527865, y: 0.88442415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6ddafe4b13d8a20800000000000000
+      internalID: 3066161574494197448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset tikus_TIKUS-07_4
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 44
+        width: 685
+        height: 877
+      alignment: 9
+      pivot: {x: 0.53, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79bd80d0bd768e2c0800000000000000
+      internalID: -4402154445240476777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset tikus_TIKUS-07_5
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 731
+        width: 170
+        height: 254
+      alignment: 9
+      pivot: {x: 0.75358886, y: 0.8544792}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e193d4db15d503c0800000000000000
+      internalID: -4393871545918582296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset tikus_TIKUS-07_6
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 75
+        width: 287
+        height: 661
+      alignment: 9
+      pivot: {x: 0.15427178, y: 0.05672847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7c27a393251c410800000000000000
+      internalID: 1495566957010929572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c6e8a2cb55dc41e4d87f1361164ec3ab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      asset tikus_TIKUS-07_0: 2726396082578014737
+      asset tikus_TIKUS-07_1: 1571413437853190807
+      asset tikus_TIKUS-07_2: 2785975992943606514
+      asset tikus_TIKUS-07_3: 3066161574494197448
+      asset tikus_TIKUS-07_4: -4402154445240476777
+      asset tikus_TIKUS-07_5: -4393871545918582296
+      asset tikus_TIKUS-07_6: 1495566957010929572
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -41,6 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG
+    uniqueID: 3912448359
+    locked: 0
+  - name: Hole
+    uniqueID: 979464701
+    locked: 0
+  - name: Mole
+    uniqueID: 1422445341
+    locked: 0
+  - name: Hammer
+    uniqueID: 4286437699
+    locked: 0
   - name: UI
     uniqueID: 857179147
     locked: 0
