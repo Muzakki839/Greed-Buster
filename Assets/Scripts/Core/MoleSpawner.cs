@@ -10,7 +10,7 @@ public class MoleSpawner : Singleton<MoleSpawner>
 {
     // [SerializeField] private GameObject molePrefab;
     public float spawnInterval = 0.1f;
-    [SerializeField] private int numMolesSpawnning = 1;
+    // [SerializeField] private int numMolesSpawnning = 1;
     [SerializeField] private List<SpawnPoints> spawnPoints = new();
 
     [HideInInspector] public MolePoolConfig molePoolConfig;
