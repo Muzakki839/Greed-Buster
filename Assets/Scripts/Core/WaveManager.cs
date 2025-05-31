@@ -4,7 +4,9 @@ using UnityEngine.Events;
 public class WaveManager : MonoBehaviour
 {
     public int wave = 1;
+    [Header("Events")]
     [SerializeField] private UnityEvent gameOverEvent;
+    [SerializeField] private UnityEvent waveTransition;
 
     [Header("Init Wave Config")]
     // target wave
@@ -26,6 +28,8 @@ public class WaveManager : MonoBehaviour
     [Header("")]
     // reward
     [SerializeField] private int next_PointMultiplier = 2;
+
+    
 
     private MoleSpawner moleSpawner;
     private MolePoolConfig molePoolConfig;
@@ -52,15 +56,16 @@ public class WaveManager : MonoBehaviour
 
     private void Update()
     {
-        if (scoreManager.IsTargetScoreReached())
-        {
-            NextWave();
-        }
-
         if (timer.timeRemaining <= 0)
         {
             moleSpawner.StopSpawn();
             gameOverEvent?.Invoke();
+        }
+
+        if (scoreManager.IsTargetScoreReached())
+        {
+            waveTransition?.Invoke();
+            NextWave();
         }
     }
 

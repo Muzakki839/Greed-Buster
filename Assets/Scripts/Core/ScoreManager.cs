@@ -20,20 +20,8 @@ public class ScoreManager : Singleton<ScoreManager>
 
     public void UpdateUI()
     {
-        string textFormat = $"<style=Title>Rp {FormatNumber(score)} </style> / {FormatNumber(targetScore)}";
+        string textFormat = $"<style=Title>Rp {NumberFormatter.FormatNumber(score)} </style> / {NumberFormatter.FormatNumber(targetScore)}";
         scoreText.text = textFormat;
-    }
-
-    private string FormatNumber(int num)
-    {
-        if (num >= 1_000_000) // Triliun
-            return $"{num / 1_000_000.0:F1} T";
-        if (num >= 1_000) // Miliar
-            return $"{num / 1_000.0:F1} M";
-        if (num >= 1) // Juta
-            return $"{num / 1} Jt";
-
-        return num.ToString();
     }
 
     public int GetScore() { return score; }
@@ -52,6 +40,7 @@ public class ScoreManager : Singleton<ScoreManager>
             UpdateUI();
             yield return score = endScore;
         }
+        UpdateUI();
     }
 
     /// <summary>
