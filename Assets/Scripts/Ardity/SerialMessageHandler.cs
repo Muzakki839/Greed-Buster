@@ -55,9 +55,9 @@ public class SerialMessageHandler : Singleton<SerialMessageHandler>
     //---------------------------------------------------------------------
     public void SendLedMessage(int id, bool isOn)
     {
-        if (isOn)
-            serialController.SendSerialMessage("led_" + id + 1 + " ON\n");
-        else
-            serialController.SendSerialMessage("led_" + id + 1 + " OFF\n");
+        int ledID = id + 1;
+        string message = "led_" + ledID + (isOn ? " ON\n" : " OFF\n");
+
+        serialController.SendSerialMessage(message);
     }
 }
