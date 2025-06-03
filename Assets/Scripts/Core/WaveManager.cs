@@ -5,6 +5,7 @@ public class WaveManager : MonoBehaviour
 {
     public int wave = 1;
     [Header("Events")]
+    [SerializeField] private UnityEvent startGameEvent;
     [SerializeField] private UnityEvent gameOverEvent;
     [SerializeField] private UnityEvent waveTransition;
 
@@ -29,8 +30,6 @@ public class WaveManager : MonoBehaviour
     // reward
     [SerializeField] private int next_PointMultiplier = 2;
 
-    
-
     private MoleSpawner moleSpawner;
     private MolePoolConfig molePoolConfig;
     private ScoreManager scoreManager;
@@ -50,8 +49,7 @@ public class WaveManager : MonoBehaviour
         molePoolConfig.waitDurationMultiplier = init_WaitDurationMuliplier;
 
         // start game
-        moleSpawner.StartSpawn();
-        timer.StartTimer();
+        startGameEvent?.Invoke();
     }
 
     private void Update()
@@ -67,6 +65,12 @@ public class WaveManager : MonoBehaviour
             waveTransition?.Invoke();
             NextWave();
         }
+    }
+
+    public void StartGame()
+    {
+        moleSpawner.StartSpawn();
+        timer.StartTimer();
     }
 
     public void NextWave()
