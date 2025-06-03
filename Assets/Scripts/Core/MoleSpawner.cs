@@ -111,6 +111,11 @@ public class MoleSpawner : Singleton<MoleSpawner>
     {
         return spawnPoints[id].spawnedMole;
     }
+
+    public Transform GetSpawnPointTransformByID(int id)
+    {
+        return spawnPoints[id].spawnPointTransform;
+    }
 }
 
 [System.Serializable]

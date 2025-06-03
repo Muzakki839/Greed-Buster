@@ -5,6 +5,12 @@ public class PunchSystem : MonoBehaviour
     [SerializeField] private GameObject hammerPrefab;
 
     private GameObject spawnedHammer;
+    private MoleSpawner moleSpawner;
+
+    public void Start()
+    {
+        moleSpawner = MoleSpawner.Instance;
+    }
 
     public void PunchHoleID(int id)
     {
@@ -29,10 +35,10 @@ public class PunchSystem : MonoBehaviour
     {
         if (spawnedHammer != null)
         {
-            Destroy(spawnedHammer);
+            DestroyImmediate(spawnedHammer);
         }
 
-        spawnedHammer = Instantiate(hammerPrefab, MoleSpawner.Instance.GetSpawnPositionByID(id), Quaternion.identity);
-        Destroy(spawnedHammer, 0.1f);
+        spawnedHammer = Instantiate(hammerPrefab, moleSpawner.GetSpawnPositionByID(id), Quaternion.identity, moleSpawner.GetSpawnPointTransformByID(id));
+        Destroy(spawnedHammer, 0.15f);
     }
 }
