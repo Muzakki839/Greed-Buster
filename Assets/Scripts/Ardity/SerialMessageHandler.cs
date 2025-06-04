@@ -20,6 +20,8 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
         {
             punchSystem = FindFirstObjectByType<PunchSystem>();
         }
+
+        SendGameState(gameState);
     }
 
     //---------------------------------------------------------------------
