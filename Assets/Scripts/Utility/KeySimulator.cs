@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
 using System.Collections;
 
-public class KeySimulator : MonoBehaviour
+public class KeySimulator : Singleton<KeySimulator>
 {
    // Test the key simulation by pressing the space key
    private void Update()
