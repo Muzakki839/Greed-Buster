@@ -10,11 +10,11 @@ public class KeySimulator : Singleton<KeySimulator>
    {
       if (Keyboard.current.spaceKey.wasPressedThisFrame)
       {
-         StartCoroutine(SimulateKeyPressCoroutine(Key.RightArrow, 0.1f));
+         StartCoroutine(SimulateKeyPressCoroutine(Key.RightArrow));
       }
    }
 
-   public IEnumerator SimulateKeyPressCoroutine(Key key, float duration)
+   public IEnumerator SimulateKeyPressCoroutine(Key key, float duration = 0.1f)
    {
       var keyboard = InputSystem.GetDevice<Keyboard>();
       if (keyboard != null)

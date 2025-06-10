@@ -1,6 +1,6 @@
 using UnityEngine;
-using System.Collections;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
 {
@@ -12,7 +12,7 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
 
     private PunchSystem punchSystem;
 
-    void Start()
+    private void Start()
     {
         serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
 
@@ -27,7 +27,7 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
     //---------------------------------------------------------------------
     // Receive data
     //---------------------------------------------------------------------
-    void Update()
+    public void Update()
     {
         string message = serialController.ReadSerialMessage();
 
@@ -58,6 +58,10 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
                         punchSystem?.PunchHoleID(id - 1);
                         break;
                     case ButtonScheme.InputName:
+                        if (KeySimulator.Instance != null)
+                        {
+                            SimulatePressKey(id);
+                        }
                         break;
                     case ButtonScheme.AnyButton:
                         AnyButtonPressedEvent?.Invoke();
@@ -78,6 +82,28 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
         if (buttonScheme == ButtonScheme.AnyButton)
         {
             AnyButtonPressedEvent?.Invoke();
+        }
+    }
+
+    /// <summary>
+    /// Simulate key press based on the push button ID
+    /// </summary>
+    /// <param name="id"></param>
+    private void SimulatePressKey(int id)
+    {
+        Key key = id switch
+        {
+            2 => Key.UpArrow,
+            4 => Key.LeftArrow,
+            6 => Key.RightArrow,
+            8 => Key.DownArrow,
+            5 => Key.Enter,
+            _ => Key.None
+        };
+
+        if (key != Key.None)
+        {
+            StartCoroutine(KeySimulator.Instance.SimulateKeyPressCoroutine(key));
         }
     }
 
