@@ -1889,7 +1889,7 @@ MonoBehaviour:
   gameBGM: {fileID: 8300000, guid: ea3c4e5614d731d4e8d770d596c30c12, type: 3}
   winBGM: {fileID: 8300000, guid: 4729dd6ea549188419481d303d161827, type: 3}
   loseBGM: {fileID: 8300000, guid: ebfda821d5a835647ba3a840f10a156c, type: 3}
-  inputNameBGM: {fileID: 0}
+  inputNameBGM: {fileID: 8300000, guid: e5ef977ed034bd843b36da80c85ddce4, type: 3}
   leaderboardBGM: {fileID: 8300000, guid: 922fa2ef76c40ff49afbf23acdd6f7a2, type: 3}
 --- !u!82 &1976616623
 AudioSource:

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class PunchSystem : MonoBehaviour
 {
     [SerializeField] private GameObject hammerPrefab;
@@ -7,9 +8,12 @@ public class PunchSystem : MonoBehaviour
     private GameObject spawnedHammer;
     private MoleSpawner moleSpawner;
 
+    private AudioSource punchAudioSource;
+
     public void Start()
     {
         moleSpawner = MoleSpawner.Instance;
+        punchAudioSource = GetComponent<AudioSource>();
     }
 
     public void PunchHoleID(int id)
@@ -38,7 +42,14 @@ public class PunchSystem : MonoBehaviour
             DestroyImmediate(spawnedHammer);
         }
 
-        spawnedHammer = Instantiate(hammerPrefab, moleSpawner.GetSpawnPositionByID(id), Quaternion.identity, moleSpawner.GetSpawnPointTransformByID(id));
+        spawnedHammer = Instantiate(
+            hammerPrefab,
+            moleSpawner.GetSpawnPositionByID(id),
+            Quaternion.identity,
+            moleSpawner.GetSpawnPointTransformByID(id)
+        );
+
+        punchAudioSource.Play();
         Destroy(spawnedHammer, 0.15f);
     }
 }
