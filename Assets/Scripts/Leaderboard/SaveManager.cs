@@ -10,7 +10,7 @@ public class SaveManager : MonoBehaviour
     [SerializeField] private string nextScene = "TapCard";
 
     private string SaveFilePath => Path.Combine(Application.dataPath, "SaveData", "leaderboard.json");
-    private List<LeaderboardData> leaderboard = new();
+    public List<LeaderboardData> leaderboard = new();
 
     private void Start()
     {
@@ -65,6 +65,15 @@ public class SaveManager : MonoBehaviour
     {
         leaderboard.Sort((a, b) => b.score.CompareTo(a.score));
         return leaderboard.GetRange(0, Mathf.Min(top, leaderboard.Count));
+    }
+
+    public int GetHighestScore()
+    {
+        if (leaderboard.Count == 0)
+            return 0;
+
+        leaderboard.Sort((a, b) => b.score.CompareTo(a.score));
+        return leaderboard[0].score;
     }
 }
 
