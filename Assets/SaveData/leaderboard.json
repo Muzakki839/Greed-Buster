@@ -1,6 +1,10 @@
 {
     "list": [
         {
+            "playerName": "RTYYU",
+            "score": 49340
+        },
+        {
             "playerName": "TYUI",
             "score": 19390
         },
@@ -45,6 +49,10 @@
             "score": 140
         },
         {
+            "playerName": "W",
+            "score": 0
+        },
+        {
             "playerName": "QPK",
             "score": 0
         },
@@ -62,10 +70,6 @@
         },
         {
             "playerName": "QPPL",
-            "score": 0
-        },
-        {
-            "playerName": "W",
             "score": 0
         }
     ]
