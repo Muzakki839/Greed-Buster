@@ -40,17 +40,11 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
         else
             Debug.Log("Message arrived: " + message);
 
-        // read RFID msg "mulai" or Button "LIKE" "DiSLIKE" or read button msg "btn_1""
+        // read RFID msg "mulai" or read button msg "btn_1""
         switch (gameState)
         {
             case GameState.TapCard:
                 if (message.Trim() == "mulai")
-                {
-                    AnyButtonPressedEvent?.Invoke();
-                }
-                break;
-            case GameState.Leaderboard:
-                if (message.Trim() == "LIKE" || message.Trim() == "DISLIKE")
                 {
                     AnyButtonPressedEvent?.Invoke();
                 }
@@ -138,13 +132,13 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
     {
         string message = state switch
         {
-            GameState.TapCard => "sebelumMain\n",
-            GameState.Game => "mainGame\n",
-            GameState.Win => "menang\n",
-            GameState.Lose => "kalah\n",
-            GameState.InputName => "pilihNama\n",
-            GameState.Leaderboard => "highscore\n",
-            _ => "sebelumMain\n",
+            GameState.TapCard => "sebelumMain_ON\n",
+            GameState.Game => "mainGame_ON\n",
+            GameState.Win => "menang_ON\n",
+            GameState.Lose => "kalah_ON\n",
+            GameState.InputName => "pilihNama_ON\n",
+            GameState.Leaderboard => "highscore_ON\n",
+            _ => "sebelumMain_ON\n",
         };
         serialController.SendSerialMessage(message);
     }
@@ -153,13 +147,13 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
     {
         string message = gameState switch
         {
-            GameState.TapCard => "sebelumMain\n",
-            GameState.Game => "mainGame\n",
-            GameState.Win => "menang\n",
-            GameState.Lose => "kalah\n",
-            GameState.InputName => "pilihNama\n",
-            GameState.Leaderboard => "highscore\n",
-            _ => "sebelumMain\n",
+            GameState.TapCard => "sebelumMain_ON\n",
+            GameState.Game => "mainGame_ON\n",
+            GameState.Win => "menang_ON\n",
+            GameState.Lose => "kalah_ON\n",
+            GameState.InputName => "pilihNama_ON\n",
+            GameState.Leaderboard => "highscore_ON\n",
+            _ => "sebelumMain_ON\n",
         };
         serialController.SendSerialMessage(message);
     }
@@ -168,13 +162,13 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
     {
         string message = id switch
         {
-            0 => "sebelumMain\n",
-            1 => "mainGame\n",
-            2 => "menang\n",
-            3 => "kalah\n",
-            4 => "pilihNama\n",
-            5 => "highscore\n",
-            _ => "sebelumMain\n",
+            0 => "sebelumMain_ON\n",
+            1 => "mainGame_ON\n",
+            2 => "menang_ON\n",
+            3 => "kalah_ON\n",
+            4 => "pilihNama_ON\n",
+            5 => "highscore_ON\n",
+            _ => "sebelumMain_ON\n",
         };
         serialController.SendSerialMessage(message);
     }

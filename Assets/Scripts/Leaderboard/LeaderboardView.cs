@@ -25,13 +25,15 @@ public class LeaderboardView : MonoBehaviour
             return;
         }
 
-        foreach (LeaderboardData data in saveManager.leaderboard)
+        int count = Mathf.Min(5, saveManager.leaderboard.Count);
+        for (int i = 0; i < count; i++)
         {
+            LeaderboardData data = saveManager.leaderboard[i];
             GameObject item = Instantiate(leaderboardListItemPrefab, transform);
             if (item.TryGetComponent<LeaderboardListItem>(out var listItem))
             {
                 listItem.SetData(data);
-                listItem.SetRank(saveManager.leaderboard.IndexOf(data) + 1);
+                listItem.SetRank(i + 1);
             }
             else
             {

@@ -4492,7 +4492,8 @@ PrefabInstance:
       propertyPath: reconnectionDelay
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3773210982264058914, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
