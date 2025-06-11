@@ -2137,18 +2137,6 @@ PrefabInstance:
       value: GameOver Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
       propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3407998468390270473}
@@ -2157,45 +2145,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2135311813}
     - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetScore
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CheckEnterTopScore
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CurrentStats, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: TopScoreGate, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
       propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 2047664719}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: Leaderboard
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: SaveManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -104,8 +104,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b03adc343c35dd14c9b07e140c1150a2, type: 2}
-  m_sharedMaterial: {fileID: -1120323128172249162, guid: b03adc343c35dd14c9b07e140c1150a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
+  m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -319,15 +319,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Money Saved
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b03adc343c35dd14c9b07e140c1150a2, type: 2}
-  m_sharedMaterial: {fileID: -1120323128172249162, guid: b03adc343c35dd14c9b07e140c1150a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
+  m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278241820
+  m_fontColor: {r: 0.108870044, g: 0.7921569, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -344,13 +344,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 95.7
+  m_fontSize: 88.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 170.75
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -512,13 +512,25 @@ MonoBehaviour:
   onCountdownEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7507164196816926903}
-        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: LoadToScene
-        m_Mode: 5
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrentStats, Assembly-CSharp
+        m_MethodName: SetScore
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Leaderboard
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TopScoreGate, Assembly-CSharp
+        m_MethodName: CheckEnterTopScore
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: SaveManager, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Leaderboard
@@ -616,15 +628,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 500M
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b03adc343c35dd14c9b07e140c1150a2, type: 2}
-  m_sharedMaterial: {fileID: -1120323128172249162, guid: b03adc343c35dd14c9b07e140c1150a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
+  m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278779902
+  m_fontColor: {r: 0.99790156, g: 1, b: 0.033018887, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -752,15 +764,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
   m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255448
+  m_fontColor: {r: 0.3439424, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -888,15 +900,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Rp
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b03adc343c35dd14c9b07e140c1150a2, type: 2}
-  m_sharedMaterial: {fileID: -1120323128172249162, guid: b03adc343c35dd14c9b07e140c1150a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
+  m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278779902
+  m_fontColor: {r: 0.99790156, g: 1, b: 0.033018887, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
