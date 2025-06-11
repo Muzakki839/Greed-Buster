@@ -13,6 +13,10 @@
             "score": 12460
         },
         {
+            "playerName": "WER",
+            "score": 8440
+        },
+        {
             "playerName": "TUYUL",
             "score": 1450
         },
@@ -49,6 +53,10 @@
             "score": 140
         },
         {
+            "playerName": "QPPL",
+            "score": 0
+        },
+        {
             "playerName": "W",
             "score": 0
         },
@@ -66,10 +74,6 @@
         },
         {
             "playerName": "QPP",
-            "score": 0
-        },
-        {
-            "playerName": "QPPL",
             "score": 0
         }
     ]

@@ -1,11 +1,13 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 
 public abstract class Mole : MonoBehaviour
 {
    [Header("Mole Settings")]
    public abstract int Point { get; set; }
    public abstract float WaitDuration { get; set; }
+   public UnityEvent HitEffectEvent;
 
    // Spawn Point Settings
    [HideInInspector] public int spawnPointID;
@@ -16,12 +18,16 @@ public abstract class Mole : MonoBehaviour
    public void Hit()
    {
       Debug.Log($"Hit mole at hole: {spawnPointID}");
-      HitEffect();
+      // HitEffect();
+      HitEffectEvent?.Invoke();
       ScoreManager.Instance.StartCoroutine(ScoreManager.Instance.TransferScore(Point));
       // ScoreManager.Instance.AddScore(Point);
       DestroyImmediate(gameObject);
    }
-   public virtual void HitEffect() { }
+   public virtual void HitEffect()
+   {
+      
+   }
 
    // --------- Show/Hide ---------
    public void Appear()

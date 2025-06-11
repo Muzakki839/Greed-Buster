@@ -159,8 +159,13 @@ MonoBehaviour:
       m_Sprite: {fileID: 8472671614067580575, guid: 8500e86427d72a047b508509acd3f013, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 8472671614067580575, guid: 8500e86427d72a047b508509acd3f013, type: 3}
+    - m_Name: empty
+      m_Hash: 684146116
+      m_Sprite: {fileID: 1225008792, guid: aab0d51b60f6fd44594c022304ca88f2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1225008792, guid: aab0d51b60f6fd44594c022304ca88f2, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 1
+    m_EntryOverrideCount: 2
   - m_Name: money
     m_Hash: 937366500
     m_CategoryList: []
@@ -170,8 +175,13 @@ MonoBehaviour:
       m_Sprite: {fileID: -3736311027406934826, guid: aab0d51b60f6fd44594c022304ca88f2, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: -3736311027406934826, guid: aab0d51b60f6fd44594c022304ca88f2, type: 3}
+    - m_Name: empty
+      m_Hash: 684146116
+      m_Sprite: {fileID: 1225008792, guid: aab0d51b60f6fd44594c022304ca88f2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1225008792, guid: aab0d51b60f6fd44594c022304ca88f2, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 1
+    m_EntryOverrideCount: 2
   - m_Name: hammer
     m_Hash: 519408182
     m_CategoryList: []
@@ -200,5 +210,5 @@ MonoBehaviour:
     m_FromMain: 0
     m_EntryOverrideCount: 2
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638836147047694708
+  m_ModificationHash: 638853040659672693
   m_Version: 1
