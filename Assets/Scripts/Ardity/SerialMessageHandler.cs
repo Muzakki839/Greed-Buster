@@ -172,4 +172,21 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
         };
         serialController.SendSerialMessage(message);
     }
+
+    public void SendInputNameLedMessage()
+    {
+        SendLedMessage(2, true);
+        SendLedMessage(4, true);
+        SendLedMessage(5, true);
+        SendLedMessage(6, true);
+        SendLedMessage(8, true);
+    }
+
+    public void SendAllLedOff()
+    {
+        for (int i = 0; i < 9; i++)
+        {
+            SendLedMessage(i, false);
+        }
+    }
 }
