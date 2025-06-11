@@ -62,10 +62,12 @@ public class WaveManager : MonoBehaviour
             if (TopScoreGate.Instance.IsEnterTopScore(FindFirstObjectByType<SaveManager>()))
             {
                 SerialMessageHandler.Instance.SendGameState(SerialMessageHandler.GameState.Win);
+                SerialMessageHandler.Instance.gameState = SerialMessageHandler.GameState.Win;
             }
             else
             {
                 SerialMessageHandler.Instance.SendGameState(SerialMessageHandler.GameState.Lose);
+                SerialMessageHandler.Instance.gameState = SerialMessageHandler.GameState.Lose;
             }
 
             gameOverEvent?.Invoke();
