@@ -1,6 +1,14 @@
 {
     "list": [
         {
+            "playerName": "TYUI",
+            "score": 19390
+        },
+        {
+            "playerName": "QWERTY",
+            "score": 12460
+        },
+        {
             "playerName": "TUYUL",
             "score": 1450
         },
@@ -37,6 +45,10 @@
             "score": 140
         },
         {
+            "playerName": "QPK",
+            "score": 0
+        },
+        {
             "playerName": "Q",
             "score": 0
         },
@@ -54,10 +66,6 @@
         },
         {
             "playerName": "W",
-            "score": 0
-        },
-        {
-            "playerName": "QPK",
             "score": 0
         }
     ]

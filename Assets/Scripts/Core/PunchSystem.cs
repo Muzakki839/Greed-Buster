@@ -32,6 +32,7 @@ public class PunchSystem : MonoBehaviour
         else
         {
             Debug.LogWarning($"Miss at hole: {id}");
+
         }
     }
 

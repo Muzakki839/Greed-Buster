@@ -1224,6 +1224,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoleSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 4116651316342520609, guid: 0dfd5da8c6683d241a94c95c553cc9d2, type: 3}
+      propertyPath: molePools.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116651316342520609, guid: 0dfd5da8c6683d241a94c95c553cc9d2, type: 3}
+      propertyPath: molePools.Array.data[0].odd
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116651316342520609, guid: 0dfd5da8c6683d241a94c95c553cc9d2, type: 3}
+      propertyPath: molePools.Array.data[1].odd
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116651316342520609, guid: 0dfd5da8c6683d241a94c95c553cc9d2, type: 3}
+      propertyPath: molePools.Array.data[2].odd
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116651316342520609, guid: 0dfd5da8c6683d241a94c95c553cc9d2, type: 3}
+      propertyPath: molePools.Array.data[3].odd
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116651316342520609, guid: 0dfd5da8c6683d241a94c95c553cc9d2, type: 3}
+      propertyPath: molePools.Array.data[3].molePrefab
+      value: 
+      objectReference: {fileID: 3607110513150811837, guid: f672b6b63b6d2d346ad33bbdea32880b, type: 3}
     - target: {fileID: 7830462677340650527, guid: 0dfd5da8c6683d241a94c95c553cc9d2, type: 3}
       propertyPath: spawnPoints.Array.data[0].spawnPointTransform
       value: 

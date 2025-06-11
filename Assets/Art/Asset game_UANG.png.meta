@@ -121,7 +121,7 @@ TextureImporter:
         width: 233
         height: 172
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,11 +134,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Asset game_UANG_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 160
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6e98617661e214492b7d4046aa3eb6
+      internalID: 1225008792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 93dce1f64f6d74e45a6c2a05eca2e614
     internalID: 0
     vertices: []
     indices: 
@@ -149,6 +171,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Asset game_UANG_0: -3736311027406934826
+      Asset game_UANG_1: 1225008792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
