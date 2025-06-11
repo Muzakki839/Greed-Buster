@@ -1,0 +1,36 @@
+{
+    "list": [
+        {
+            "playerName": "WE",
+            "score": 220
+        },
+        {
+            "playerName": "QWERTY",
+            "score": 140
+        },
+        {
+            "playerName": "Q",
+            "score": 0
+        },
+        {
+            "playerName": "QP",
+            "score": 0
+        },
+        {
+            "playerName": "QPP",
+            "score": 0
+        },
+        {
+            "playerName": "QPPL",
+            "score": 0
+        },
+        {
+            "playerName": "W",
+            "score": 0
+        },
+        {
+            "playerName": "QPK",
+            "score": 0
+        }
+    ]
+}

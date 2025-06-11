@@ -20,8 +20,6 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
         {
             punchSystem = FindFirstObjectByType<PunchSystem>();
         }
-
-        SendGameState(gameState);
     }
 
     //---------------------------------------------------------------------
@@ -66,6 +64,8 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
                     case ButtonScheme.AnyButton:
                         AnyButtonPressedEvent?.Invoke();
                         break;
+                    case ButtonScheme.None:
+                        break;
                     default:
                         break;
                 }
@@ -79,10 +79,7 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
 
     public void InvokeAnyButtonEvent()
     {
-        if (buttonScheme == ButtonScheme.AnyButton)
-        {
-            AnyButtonPressedEvent?.Invoke();
-        }
+        AnyButtonPressedEvent?.Invoke();
     }
 
     /// <summary>
@@ -120,6 +117,21 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
 
     public void SendGameState(GameState state)
     {
+        string message = state switch
+        {
+            GameState.TapCard => "sebelumMain\n",
+            GameState.Game => "mainGame\n",
+            GameState.Win => "menang\n",
+            GameState.Lose => "kalah\n",
+            GameState.InputName => "highscore\n",
+            GameState.Leaderboard => "pilihNama\n",
+            _ => "sebelumMain\n",
+        };
+        serialController.SendSerialMessage(message);
+    }
+
+    public void SendCurrentGameState()
+    {
         string message = gameState switch
         {
             GameState.TapCard => "sebelumMain\n",
@@ -128,6 +140,21 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
             GameState.Lose => "kalah\n",
             GameState.InputName => "highscore\n",
             GameState.Leaderboard => "pilihNama\n",
+            _ => "sebelumMain\n",
+        };
+        serialController.SendSerialMessage(message);
+    }
+
+    public void SendGameState(int id)
+    {
+        string message = id switch
+        {
+            0 => "sebelumMain\n",
+            1 => "mainGame\n",
+            2 => "menang\n",
+            3 => "kalah\n",
+            4 => "highscore\n",
+            5 => "pilihNama\n",
             _ => "sebelumMain\n",
         };
         serialController.SendSerialMessage(message);

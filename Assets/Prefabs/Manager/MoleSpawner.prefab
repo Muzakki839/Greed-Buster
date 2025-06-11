@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3692843629334825099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3042979914588788661}
+  - component: {fileID: 7830462677340650527}
+  - component: {fileID: 4116651316342520609}
+  m_Layer: 0
+  m_Name: MoleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3042979914588788661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3692843629334825099}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7830462677340650527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3692843629334825099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1e39d989ecf2b4cab2a3f4a3055b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DelayDuplicateRemoval: 0
+  spawnInterval: 0.4
+  spawnPoints:
+  - spawnPointTransform: {fileID: 0}
+    isOccupied: 0
+    spawnedMole: {fileID: 0}
+  - spawnPointTransform: {fileID: 0}
+    isOccupied: 0
+    spawnedMole: {fileID: 0}
+  - spawnPointTransform: {fileID: 0}
+    isOccupied: 0
+    spawnedMole: {fileID: 0}
+  - spawnPointTransform: {fileID: 0}
+    isOccupied: 0
+    spawnedMole: {fileID: 0}
+  - spawnPointTransform: {fileID: 0}
+    isOccupied: 0
+    spawnedMole: {fileID: 0}
+  - spawnPointTransform: {fileID: 0}
+    isOccupied: 0
+    spawnedMole: {fileID: 0}
+  - spawnPointTransform: {fileID: 0}
+    isOccupied: 0
+    spawnedMole: {fileID: 0}
+  - spawnPointTransform: {fileID: 0}
+    isOccupied: 0
+    spawnedMole: {fileID: 0}
+  - spawnPointTransform: {fileID: 0}
+    isOccupied: 0
+    spawnedMole: {fileID: 0}
+  molePoolConfig: {fileID: 0}
+--- !u!114 &4116651316342520609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3692843629334825099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22bfa7b62870ded4db58ff91d4e9aa3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitDurationMultiplier: 1
+  molePools:
+  - molePrefab: {fileID: 2411536491591422538, guid: 7b4a0910c27fd5448bb2ed31177d2f9a, type: 3}
+    odd: 1
+  - molePrefab: {fileID: 982704433366092393, guid: 3a623628fb2bbb8408774f28b6d1737b, type: 3}
+    odd: 0.2
+  - molePrefab: {fileID: 3607110513150811837, guid: 175d9e93eeab5874093f6ec015f4f872, type: 3}
+    odd: 0.1

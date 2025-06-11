@@ -73,7 +73,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -363,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TAP YOUR CARD TO PLAY_0: 1960387143622181628
+      TAP YOUR CARD TO PLAY_1: -1381974020616848553
+      TAP YOUR CARD TO PLAY_2: 6978531687111866708
+      TAP YOUR CARD TO PLAY_3: -5872484206723055342
+      TAP YOUR CARD TO PLAY_4: 204848490055523427
+      TAP YOUR CARD TO PLAY_5: 6998176012056688234
+      TAP YOUR CARD TO PLAY_6: -7649248010416768730
+      TAP YOUR CARD TO PLAY_7: 9158570833022275150
+      TAP YOUR CARD TO PLAY_8: -2988505899992927518
+      TAP YOUR CARD TO PLAY_9: -5209562147800220947
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

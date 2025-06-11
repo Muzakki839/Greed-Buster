@@ -52,16 +52,16 @@ public class Singleton<T> : MonoBehaviour where T : Component
 
     private void OnEnable()
     {
-        // Clear the single instance when unloading the current scene
-        SceneManager.sceneUnloaded += SceneManager_SceneUnloaded;
+        // // Clear the single instance when unloading the current scene
+        // SceneManager.sceneUnloaded += SceneManager_SceneUnloaded;
     }
 
     private void OnDisable()
     {
-        if (s_Instance == this as T)
-        {
-            SceneManager.sceneUnloaded -= SceneManager_SceneUnloaded;
-        }
+        // if (s_Instance == this as T)
+        // {
+        //     SceneManager.sceneUnloaded -= SceneManager_SceneUnloaded;
+        // }
     }
 
     private static void SetupInstance()
@@ -96,12 +96,12 @@ public class Singleton<T> : MonoBehaviour where T : Component
 
     // Event-handling method
 
-    // Destroy singleton when unloading scene (for demo use only)
-    private void SceneManager_SceneUnloaded(Scene scene)
-    {
-        if (s_Instance != null)
-            Destroy(s_Instance.gameObject);
+    // // Destroy singleton when unloading scene (for demo use only)
+    // private void SceneManager_SceneUnloaded(Scene scene)
+    // {
+    //     if (s_Instance != null)
+    //         Destroy(s_Instance.gameObject);
 
-        s_Instance = null;
-    }
+    //     s_Instance = null;
+    // }
 }

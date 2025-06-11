@@ -57,6 +57,17 @@ public class WaveManager : MonoBehaviour
         if (timer.timeRemaining <= 0)
         {
             moleSpawner.StopSpawn();
+
+            // send GameState message to SerialController
+            if (TopScoreGate.Instance.IsEnterTopScore(FindFirstObjectByType<SaveManager>()))
+            {
+                SerialMessageHandler.Instance.SendGameState(SerialMessageHandler.GameState.Win);
+            }
+            else
+            {
+                SerialMessageHandler.Instance.SendGameState(SerialMessageHandler.GameState.Lose);
+            }
+
             gameOverEvent?.Invoke();
         }
 
