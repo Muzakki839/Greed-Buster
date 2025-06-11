@@ -557,15 +557,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: LEADERBOARD
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
   m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282770921
+  m_fontColor: {r: 0.9137255, g: 0.8975156, b: 0.27058828, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -588,12 +588,12 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 17.2
-  m_wordSpacing: 0
+  m_characterSpacing: -2.4
+  m_wordSpacing: 21.23
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -2649,15 +2649,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: TOP GREED BUSTER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
   m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282771843
+  m_fontColor: {r: 0.5126031, g: 0.9150943, b: 0.2719384, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2680,12 +2680,12 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_characterSpacing: -2.4
+  m_wordSpacing: 21.23
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
