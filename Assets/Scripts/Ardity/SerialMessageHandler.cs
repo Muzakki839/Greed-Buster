@@ -39,7 +39,26 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
             Debug.Log("Connection attempt failed or disconnection detected");
         else
             Debug.Log("Message arrived: " + message);
-        CheckButton(message);
+
+        // read RFID msg "mulai" or Button "LIKE" "DiSLIKE" or read button msg "btn_1""
+        switch (gameState)
+        {
+            case GameState.TapCard:
+                if (message.Trim() == "mulai")
+                {
+                    AnyButtonPressedEvent?.Invoke();
+                }
+                break;
+            case GameState.Leaderboard:
+                if (message.Trim() == "LIKE" || message.Trim() == "DISLIKE")
+                {
+                    AnyButtonPressedEvent?.Invoke();
+                }
+                break;
+            default:
+                CheckButton(message);
+                break;
+        }
     }
 
     private void CheckButton(string message)
@@ -123,8 +142,8 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
             GameState.Game => "mainGame\n",
             GameState.Win => "menang\n",
             GameState.Lose => "kalah\n",
-            GameState.InputName => "highscore\n",
-            GameState.Leaderboard => "pilihNama\n",
+            GameState.InputName => "pilihNama\n",
+            GameState.Leaderboard => "highscore\n",
             _ => "sebelumMain\n",
         };
         serialController.SendSerialMessage(message);
@@ -138,8 +157,8 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
             GameState.Game => "mainGame\n",
             GameState.Win => "menang\n",
             GameState.Lose => "kalah\n",
-            GameState.InputName => "highscore\n",
-            GameState.Leaderboard => "pilihNama\n",
+            GameState.InputName => "pilihNama\n",
+            GameState.Leaderboard => "highscore\n",
             _ => "sebelumMain\n",
         };
         serialController.SendSerialMessage(message);
@@ -153,8 +172,8 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
             1 => "mainGame\n",
             2 => "menang\n",
             3 => "kalah\n",
-            4 => "highscore\n",
-            5 => "pilihNama\n",
+            4 => "pilihNama\n",
+            5 => "highscore\n",
             _ => "sebelumMain\n",
         };
         serialController.SendSerialMessage(message);
