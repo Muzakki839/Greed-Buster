@@ -39,20 +39,7 @@ public partial class SerialMessageHandler : Singleton<SerialMessageHandler>
             Debug.Log("Connection attempt failed or disconnection detected");
         else
             Debug.Log("Message arrived: " + message);
-
-        // read RFID msg "mulai" or read button msg "btn_1""
-        switch (gameState)
-        {
-            case GameState.TapCard:
-                if (message.Trim() == "mulai")
-                {
-                    AnyButtonPressedEvent?.Invoke();
-                }
-                break;
-            default:
-                CheckButton(message);
-                break;
-        }
+        CheckButton(message);
     }
 
     private void CheckButton(string message)
