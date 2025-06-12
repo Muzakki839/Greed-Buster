@@ -2270,34 +2270,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 2696729480662566122, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 5bcf14d65c66ed2438ce1585779aa245, type: 2}
-    - target: {fileID: 2696729480662566122, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.19208314
-      objectReference: {fileID: 0}
-    - target: {fileID: 2696729480662566122, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.15566039
-      objectReference: {fileID: 0}
-    - target: {fileID: 2696729480662566122, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2696729480662566122, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 7226584537782879603, guid: 5bcf14d65c66ed2438ce1585779aa245, type: 2}
-    - target: {fileID: 2696729480662566122, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4281411839
-      objectReference: {fileID: 0}
-    - target: {fileID: 2696729480662566122, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3429680284268386160, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2381,14 +2353,6 @@ PrefabInstance:
     - target: {fileID: 6124170525903665791, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
       propertyPath: m_Name
       value: GameOver Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6124170525903665791, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
-      propertyPath: countdownDuration
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7659058777093326713, guid: d6a39e07702583847b89983109dbcbe3, type: 3}
       propertyPath: onCountdownEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -697,7 +697,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: You Reach The Top 5 !!!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4661,7 +4661,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Please Enter Your Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

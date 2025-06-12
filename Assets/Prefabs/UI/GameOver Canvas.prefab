@@ -104,7 +104,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -319,7 +319,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Money Saved
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9478da7ee6400548904fad5d0592180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownDuration: 5
+  countdownDuration: 3
   playOnAwake: 1
   countdownText: {fileID: 5764320778481009095}
   preDelay: 0.3
@@ -628,7 +628,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 500M
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -764,15 +764,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
-  m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5bcf14d65c66ed2438ce1585779aa245, type: 2}
+  m_sharedMaterial: {fileID: 7226584537782879603, guid: 5bcf14d65c66ed2438ce1585779aa245, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255448
-  m_fontColor: {r: 0.3439424, g: 1, b: 0, a: 1}
+    rgba: 4281411839
+  m_fontColor: {r: 1, g: 0.15566039, b: 0.19208314, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -900,7 +900,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Rp
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5347ae4e472466842ba86443e92e4d4a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_sharedMaterial: {fileID: 7226584537782879603, guid: e56c18b7f2dd6494b80ee96419016cbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
