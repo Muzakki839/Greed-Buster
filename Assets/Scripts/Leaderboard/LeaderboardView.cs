@@ -25,6 +25,8 @@ public class LeaderboardView : MonoBehaviour
             return;
         }
 
+        saveManager.LoadData();
+
         int count = Mathf.Min(5, saveManager.leaderboard.Count);
         for (int i = 0; i < count; i++)
         {

@@ -17,8 +17,8 @@ public class SaveManager : MonoBehaviour
         LoadData();
     }
 
-    // Create save file json if doesn't exist
-    private void LoadData()
+    // Create save file json if doesn't exist, and ensure folder exists
+    public void LoadData()
     {
         if (File.Exists(SaveFilePath))
         {
@@ -34,6 +34,11 @@ public class SaveManager : MonoBehaviour
 
     private void SaveData()
     {
+        // Make sure save folder exists
+        string folder = Path.GetDirectoryName(SaveFilePath);
+        if (!Directory.Exists(folder))
+            Directory.CreateDirectory(folder);
+
         LeaderboardList wrapper = new() { list = leaderboard };
         string json = JsonUtility.ToJson(wrapper, true);
         File.WriteAllText(SaveFilePath, json);

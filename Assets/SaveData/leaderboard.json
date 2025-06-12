@@ -1,88 +1,8 @@
 {
     "list": [
         {
-            "playerName": "RTYYU",
-            "score": 49340
-        },
-        {
-            "playerName": "QW",
-            "score": 24480
-        },
-        {
             "playerName": "Q",
-            "score": 20420
-        },
-        {
-            "playerName": "TYUI",
-            "score": 19390
-        },
-        {
-            "playerName": "QWERTY",
-            "score": 12460
-        },
-        {
-            "playerName": "WER",
-            "score": 8440
-        },
-        {
-            "playerName": "TUYUL",
-            "score": 1450
-        },
-        {
-            "playerName": "Q",
-            "score": 750
-        },
-        {
-            "playerName": "Q",
-            "score": 740
-        },
-        {
-            "playerName": "TES",
-            "score": 710
-        },
-        {
-            "playerName": "Q",
-            "score": 630
-        },
-        {
-            "playerName": "TGLPOIK",
-            "score": 520
-        },
-        {
-            "playerName": "ETUIOPO",
-            "score": 370
-        },
-        {
-            "playerName": "WE",
-            "score": 220
-        },
-        {
-            "playerName": "QWERTY",
-            "score": 140
-        },
-        {
-            "playerName": "QPPL",
-            "score": 0
-        },
-        {
-            "playerName": "W",
-            "score": 0
-        },
-        {
-            "playerName": "QPK",
-            "score": 0
-        },
-        {
-            "playerName": "Q",
-            "score": 0
-        },
-        {
-            "playerName": "QP",
-            "score": 0
-        },
-        {
-            "playerName": "QPP",
-            "score": 0
+            "score": 40
         }
     ]
 }
